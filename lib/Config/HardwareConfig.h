@@ -1,0 +1,4 @@
+#ifndef HARDWARECONFIG_H
+#define HARDWARECONFIG_H
+
+#endif // HARDWARECONFIG_H
