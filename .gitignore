@@ -1,0 +1,6 @@
+# IDE specifics
+.pio
+.vscode
+
+# Temp office files
+~$*
