@@ -1,8 +1,9 @@
 #include <WiFi.h>
 
+#include "SoftwareConfig.h"
 #include "WifiConnect.h"
 
-void WifiConnect::connectUsingSmarConfig()
+void WifiConnect::connect()
 {
     // Tries to connect with previous credentials or starts smartconfig
     if (WiFi.begin() == WL_CONNECT_FAILED)
@@ -34,4 +35,9 @@ void WifiConnect::printSmartConfigComplete()
     Serial.print("Connected as [");
     Serial.print(WiFi.localIP());
     Serial.println("].");
+}
+
+bool WifiConnect::isConnected()
+{
+    return WiFi.isConnected();
 }

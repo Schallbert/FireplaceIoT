@@ -8,14 +8,12 @@ class WifiConnect
     ~WifiConnect() = default;
     WifiConnect(WifiConnect &cpy) = delete;
 
-    void connectUsingSmarConfig();
+    void connect();
     bool isConnected();
 
     private:
     void blockUntilSmartConfigIsComplete();
     void printSmartConfigComplete();
-
-    bool connected{false};
 };
 
 #endif // WIFICONNECT_H
